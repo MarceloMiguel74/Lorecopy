@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App_Lore_Copy</title>
+</head>
+<body>
+    <nav>
+        <a href="#" class="link link_activo" id="home">Home</a>
+        <a href="#" class="link" id="empresa">Nosotros</a>
+        <a href="#" class="link logo">Lore-Copy</a>
+        <a href="#" class="link" id="servicios">Servicios</a>
+        <a href="#" class="link" id="contacto">Contacto</a>
+    </nav>
+    <div class="contenedor">
+        <div class="page page_activo" id="page_home">
+            <div class="contenido_animado">
+                <h1>LORE COPY</h1>
+            </div>
+        </div>
+        <div class="page" id="page_empresa">
+            <div class="contenido">
+                <h2>Nuestra historia</h2>  
+                <P>Comenzamos nuestro emprendimiento familiar en el año 2015, con la visión de ser parte de cada estudiante que tenia ganas de poder triunfar en una carrera, acercardole un servicio de copias economicas, luego ayudando a los comercios con volanteria para dar a conocer sus servicios. En el año 2020 comenzamos el emprendimiento Multimedios Gedeón para el catalogo virtual de productos, con diferentes formatos digitales.
+                </P>  
+            </div>
+        </div>
+        
+        <div   align="middle">
+            
+                 <img src="img/1-logo-1.jpg" alt= "Logo centrode Copiado Lore-copy" >
+            
+        </div>            
+        <div class="page" id="page_servicios">
+            <div class="contenido">
+                <h2>Alguno de nuestros servicios</h2>  
+                <P>Impresiones, Fotocopias, Scaneos, Armado de pdf, Folletería, Tarjetas personales, Catalogo virtual, Tarjetas virtuales para cumpleaños o eventos especiales.
+                </P> 
+                <p>Tazas en vidrio de 270cm³ totalmente personalizadas</p>
+            </div>
+
+        </div>
+        <div class="page" id="page_contacto">
+            <div class="contenido">
+                <h2>Comunicate</h2>  
+                <P>Nuestro servicios para comunicaión:</p>
+                    <p>Whatsapp: 11- 5402- 5429</p>
+                    <p>Mail: centrodecopiadolorecopy@gmail.com</p>
+                    <p>Facebook_page: Facebook.com/centrodecopiadolorecopy
+                </P>  
+                <p>Nos encontramos en Eduardo zaenz 6438, Dorrego, gonzález catán</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.1147550169158!2d-58.60622674989936!3d-34.77823566995502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5863b11ed57%3A0x22a6a11cacacafc6!2sCentro%20de%20Copiado%20%22Lore-Copy%22!5e0!3m2!1ses!2sar!4v1593572634117!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&display=swap');
+        body{
+            height: 100vh;
+            margin: 0;
+            font-family: 'Dosis', sans-serif;
+            background: radial-gradient(at top,red, rgb(206,7,7),rgb(63, 1, 1));
+            overflow: hidden;
+        }
+        nav{
+         margin: 0 auto;
+         width: 1000px;
+         background: black;
+         border-radius: 0px 0px 20px 20px;
+         display: flex;
+         justify-content: space-around;
+        }
+        nav a{
+            margin-top: 50px;
+            color: white;
+            margin-bottom: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            width: 90%;
+            text-align: center;
+            font-weight: 300;
+        }
+        nav a:nth-child(1), nav a:nth-child(4){
+            border-right: #444 1px solid;
+
+        }
+        .link_activo{
+            color: red;
+        }
+        .img{
+            display: contents;
+            width: 500px;
+    height: 500px;
+    
+    background-color: blue;
+        }
+
+        .contenedor{
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .contenedor .page{
+            width: 100%;
+            height: 50vh;
+            top: 100px;
+            left: 0;
+            background: linear-gradient(15deg, black 90%, white 90%);
+            position: absolute;
+            box-shadow: 0px 0px 40px rgb(0,0, 0 ,0.561);
+            transform: translateX(150%);
+            border-radius: 20px;
+        }
+
+        .contenedor .page .contenido {
+            color: white;
+            padding: 50px;
+
+        }
+
+        .contenedor .page .contenido p{
+            columns: 1;
+        }
+       
+
+        .contenedor .page_activo{
+            transform: translateX(0%);
+        }
+        .contenedor .page .contenido_animado{
+            background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
+            width: 100%;   
+            height: 100%;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contenido_animado h1{
+            background: linear-gradient(to right, black 0%, black 50%, black 50%, white 50%, white 100% );
+            color: white;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 100px;
+            animation: texto 2s ease-in-out infinite;
+        }
+
+        p{
+            font-size: 25px;
+        }
+
+        @keyframes texto {
+            0%{ transform: scale(1);}
+            50%{ transform: scale(1.4);}
+            100%{ transform: scale(1);}
+        }
+        @keyframes page_entrada{
+            from{ transform: translateX(150%);}
+            to { transform: translateX(0%);}
+        }
+        @keyframes page_salida{
+            from{ transform: translateX(0%);}
+            to { transform: translateX(-150%);}
+        }
+    </style>
+
+    <script>
+        const menu = document.querySelectorAll('.link');
+        let pagina_actual = '#page_home';
+        let link_actual = '#home';
+        for(const link of menu){
+            link.addEventListener('click',function(e){
+                //salida
+                document.querySelector(pagina_actual).style.animation= 'page_salida 0.5s ease forwards 0s'
+                document.querySelector(link_actual).style.color= 'white'
+
+                //entrada
+                document.querySelector('#page_'+e.target.id).style.animation= 'page_entrada 0.5s ease forwards 0s'
+                document.querySelector('#'+e.target.id).style.color= 'red'
+                //actualizacion
+                pagina_actual ='#page_'+e.target.id
+                link_actual = '#'+e.target.id
+                e.preventDefault()
+
+
+            });
+        };
+
+
+    </script>
+
+
+</body>
+</html>
